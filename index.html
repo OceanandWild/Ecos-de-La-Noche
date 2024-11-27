@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecos de la Noche</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen">
+            <h1>Ecos de la Noche</h1>
+            <p id="intro-text">¿Te atreves a enfrentar cada nivel?</p>
+            <button id="start-button">Comenzar</button>
+            <button id="credits-button">Créditos</button>
+        </div>
+        <div id="game-screen" class="hidden">
+            <h2 id="level-title"></h2>
+            <div id="message"></div>
+            <div id="boss-section" class="hidden">
+                <h3 id="boss-name"></h3>
+                <img id="boss-image" class="hidden" />
+                <div id="health-bar">
+                    <div id="health-fill"></div>
+                </div>
+                <button id="escape-button" class="hidden">Escapar</button>
+            </div>
+            <button id="next-button" class="locked">🔒</button>
+        </div>
+        <div id="credits-screen" class="hidden">
+            <h1>Créditos</h1>
+            <div id="credits-content">
+                <p>Programador: Ocean and Wild</p>
+                <p>Diseño: Ocean and Wild</p>
+                <p>Historia: Ocean and Wild</p>
+            </div>
+            <button id="back-to-menu">Volver al Menú</button>
+        </div>
+    </div>
+    <audio id="screamer-sound" src="terror_sound.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
